@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import { Element } from "react-scroll";
 import img1 from "../imgs/icons8-add-50 (1).png";
+import img2 from "../imgs/Backend Development.png"
+import img3 from "../imgs/python certificate.png"
+import img4 from "../imgs/SQL MySQL.png"
+
 import { motion, AnimatePresence } from "framer-motion";
 
 export const Five = () => {

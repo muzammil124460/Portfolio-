@@ -14,18 +14,24 @@ import s3 from "../imgs/postman-icon.png"
 import s4 from "../imgs/vs code .png"
 import img9 from "../imgs/postman-icon.png";
 import img10 from "../imgs/redux-icon.png";
+import img11 from "../imgs/langchain.webp"
+import img12 from "../imgs/langgraph.png"
+import img13 from  "../imgs/python.png"
+import img14 from  "../imgs/FastAPI.png"
+
 
 import { BiBriefcase, BiCalendar, BiCalendarCheck, BiLinkAlt } from "react-icons/bi";
-import { MdDeveloperMode, MdSubject } from "react-icons/md";
-import { SiEducative, SiHyperskill } from "react-icons/si";
+import { MdDeveloperMode, MdDone, MdSubject } from "react-icons/md";
+import { SiCloudinary, SiDevpost, SiEducative, SiExoscale, SiGithub, SiHuggingface, SiHyperskill, SiMysql, SiNumpy, SiPandas, SiPostgresql, SiPostman, SiRedux, SiScikitlearn, SiSqlalchemy, SiTypescript } from "react-icons/si";
 import { FaBriefcase, FaCode, FaGraduationCap, FaTools } from "react-icons/fa";
 import { FaBookOpen } from "react-icons/fa6";
 import { HiOutlineBookOpen } from "react-icons/hi";
-import { PiGraduationCapThin } from "react-icons/pi";
+import { PiGraduationCapThin, PiMicrosoftExcelLogo, PiMicrosoftWordLogo } from "react-icons/pi";
 import { FcBarChart, FcExport, FcGraduationCap } from "react-icons/fc";
 import { GiSkills } from "react-icons/gi";
 import { GrUserExpert } from "react-icons/gr";
 import { SlCalender } from "react-icons/sl";
+import { BsFileExcel } from "react-icons/bs";
 
 export const TPaeg = () => {
   useEffect(() => {
@@ -55,8 +61,10 @@ export const TPaeg = () => {
 
   return (
     <section dat-theme='dark' className="w-screen mb-10 md:mb-0 h-fit flex flex-col justify-around items-center dark:bg-bg-dark  bg-white  ">
+      
+      
       <Element name="Skills">
-        <h1 className=" w-full pt-10 md:text-4xl text-xl  dark:text-text-color text-gray-800 justify-center  flex items-center gap-4 mb-8"><FaCode className="text-green-400 animate-pulse size-5 md:size-10"/> Skill   <span className="text-gray-500">Summary</span> </h1>
+        <h1 className=" w-full font-bold pt-10 md:text-3xl text-xl  dark:text-text-color text-gray-500   flex  gap-4 "><span className="text-gray-800">Skill</span>  Summary </h1>
     
 
       
@@ -142,67 +150,88 @@ I use Tailwind for responsive UI, JavaScript for interactivity, and Redux to man
       
       
       </div>
+
+       <div className="w-full md:max-w-4xl mb-10 md:mb-0 mx-auto md:h-screen flex flex-col md:grid md:grid-cols-2 md:items-center md:justify-center py-10 px-4 gap-10">
+
+  {/* Grid of Letters M E R N */}
+  <div className="grid md:pl-5 lg:pl-0  grid-cols-2 grid-rows-2 w-full md:w-1/2 gap-5 place-items-center md:col-span-1">
+    <div className="flex hover:scale-102 duration-200 shadow-gray-300  flex-col gap-2 items-center justify-center w-24 h-24 bg-gray-200 shadow-2xl">
+      <img src={img11} alt="" className="w-8 h-8" />
+    </div>
+
+    <div className="flex  hover:scale-102 duration-200 shadow- flex-col gap-2  items-center justify-center w-24 h-24 bg-emerald-950/10 shadow-2xl">
+      <img src={img12} alt="" className="w-8 h-8" />
     
-   {/* 2 Additional Skills Section */}
-
-
-  <div className=" max-w-4xl  flex md:flex-row-reverse  flex-col-reverse md:justify-between  md:h-screen  items-center  ">
- <div className="  md:px-0 px-2 mt-5 md:m-0 text2r md:w-1/2 col-span-1  ">
- <h1 className="text-center dark:text-text-color mb-3 font-extrabold"> App & UI Skills </h1>
-            <p className=" dark:text-secondary-text-color   text-center text-sm text-black ">
-   I have practical experience working with Git, React Native, and Postman. These tools help me
-    efficiently build mobile applications, manage code versions, and test APIs during development.
-
-.
-      </p>
-        </div>
-        
-        <div className="grid grid-cols-2 grid-rows-2 md:w-1/4 gap-5 place-items-center md:col-span-1">
-    <div className="flex flex-col hover:scale-102 duration-200 shadow-blue-400 gap-2 items-center justify-center w-24 h-24 bg-blue-100 shadow-2xl">
-      
-            <img src={s4} alt="" className="w-8 h-8" />
-
-      
-      <h1></h1>
     </div>
 
-    <div className="flex hover:scale-102  duration-200 shadow-red-300 flex-col gap-2 items-center justify-center w-24 h-24 bg-red-50 shadow-2xl">
-      <img src={s1} alt="" className="w-8 h-8" />
-      <h1></h1>
+    <div className="flex flex-col gap-2 items-center  hover:scale-102 duration-200 shadow-2xl  shadow-blue-500/30 justify-center w-24 h-24 bg-yellow-100/20">
+      <img src={img13} alt="" className="w-8 h-8" />
     </div>
 
-    <div className="flex hover:scale-102  duration-200 shadow-blue-300 flex-col gap-2 items-center justify-center w-24 h-24 bg-blue-50 shadow-2xl">
-      <img src={s2} alt="" className="w-8 h-8" />
-      <h1></h1>
-    </div>
-
-    <div className="flex hover:scale-102  duration-200 shadow-orange-300 flex-col gap-2 items-center justify-center w-24 h-24 bg-orange-100 shadow-2xl">
-      <img src={s3} alt="" className="w-8 h-8" />
-      <h1></h1>
+    <div className="flex flex-col gap-2 items-center  hover:scale-102 duration-200   shadow-blue-600/  justify-center w-24 h-24 bg-teal-500/10 shadow-2xl">
+      <img src={img14} alt="" className="w-8 h-8" />
     </div>
   </div>
 
+  {/* Text Section */}
+  <div className="md:col-span-1  flex text2r  flex-col justify-center items-center text-center">
+    <h1 className="font-extrabold dark:text-text-color text-xl mb-4">GEN AI </h1>
+    <p className="text-sm  text-black text-secondary-text-color  max-w-md">
+      I have experience with Python, LangChain, LangGraph, and FastAPI for building AI-powered applications and backend APIs. I use these technologies to develop AI agents, RAG systems, and intelligent workflows.
+  </p>
+  </div>
+</div>
+    
+   {/*  Additional Skills Section */}
 
-        
 
-       
-      
-      
+  
+
+      <h1 className="my-10 text-gray-500 text-3xl font-bold"><span className="text-gray-800">Additional</span> Skill</h1>
+
+      <div className=" grid grid-rows-2 gap-5 justify-center items-center">
+
+<div className=" flex gap-20">
+  <SiTypescript className="size-7 animate-spin hover:text-black text-accent-color"/>
+<SiRedux className="size-7 hover:text-black text-purple-600"/>
+<SiPostman className="size-7 hover:text-black animate-spin text-orange-600"/>
+<SiMysql className="size-10 hover:text-black text-gray-700"/>
+<SiPostgresql className="size-7 hover:text-black  text-gray-800"/>
+<SiSqlalchemy className="size-10 hover:text-black text-black"/>
+<SiHuggingface className="size-7 hover:text-black text-amber-400"/>
+</div>
+
+<div className=" flex gap-20">
+  <SiGithub className="size-7 hover:text-black text-black"/>
+<SiScikitlearn className="size-10 hover:text-black text-orange-400"/>
+<SiPandas className="size-7 hover:text-black text-gray-700"/>
+<SiNumpy className="size-7 hover:text-black text-blue-500"/>
+<PiMicrosoftExcelLogo className="size-7 hover:text-black text-green-600"/>
+<PiMicrosoftWordLogo className="size-7 hover:text-black text-blue-600"/>
+<SiCloudinary className="size-7 hover:text-black text-blue-600"/>
+</div>
+
+
+
+
+
       </div>
 
       </Element>
 
+      {/* Education */}
+
 <Element name="Education">
-  <div className="min-h-screen w-full flex  justify-center items-start px-4 md:px-8 lg:px-20 py-10">
+  <div className="min-h-screen w-full mt-30 flex  justify-center items-start px-4 md:px-8 lg:px-20 py-30">
     <div className="max-w-4xl w-full">
 
       {/* Heading */}
-      <h1 className="font-mono text-2xl md:text-4xl dark:text-text-color text-gray-800 mb-10 flex justify-center items-center gap-3">
-        <FcGraduationCap /> Education
+      <h1 className="font-bold text-3xl md:text-4xl dark:text-text-color text-gray-800 mb-10 flex  items-center gap-3">
+        <FcGraduationCap />  Education
       </h1>
 
       {/* Card Container */}
-      <div className="w-full flex flex-col  shadow-xl dark:bg-card-color bg-white hover:scale-[1.01] duration-500 hover:shadow-2xl rounded-2xl p-5 gap-6">
+      <div className="w-full flex flex-col  dark:bg-card-color bg-white  rounded-2xl p-5 gap-6">
 
         {/* Top Row: Degree and College */}
         <div className="flex flex-col sm:flex-row justify-between gap-6">
@@ -211,7 +240,7 @@ I use Tailwind for responsive UI, JavaScript for interactivity, and Redux to man
           <div className="flex flex-col gap-3">
             <h1 className="flex items-center gap-3 text-lg md:text-xl dark:text-text-color">
               Bachelor of Computer Applications (BCA)
-              <span className="bg-green-400 text-white text-xs px-2 py-1 rounded-md">Current</span>
+              <span className="bg-gray-400 text-white text-xs px-2 py-1 rounded-md flex gap-2 justify-center items-center">Passed <MdDone/></span>
             </h1>
             <a href="https://maca.ac.in/"  className="text-base flex items-center  md:text-lg font-serif dark:text-text-color"> <span className=" border-b dark:border-secondary-text-color ">M</span>aulana Azad College <BiLinkAlt className="md:size-5 size-2 "/></a>
           </div>
@@ -219,17 +248,39 @@ I use Tailwind for responsive UI, JavaScript for interactivity, and Redux to man
           {/* Right Info */}
           <div className="flex flex-col items-start sm:items-end text-sm gap-2">
             <h3 className="flex items-center gap-2 dark:text-secondary-text-color">
-              <BiCalendar /> 2023
+              <BiCalendar /> 2026
             </h3>
-            <p className="dark:text-secondary-text-color">Final year student</p>
+            <p className="dark:text-secondary-text-color">Completed </p>
           </div>
         </div>
 
         {/* Description */}
         <p className="text-sm leading-relaxed dark:text-text-color">
-          Comprehensive program covering computer science fundamentals, programming languages, 
-          database management, and software engineering principles. I’m currently pursuing BCA from Maulana Azad College, Aurangabad. I’m learning programming, web and app development, and working on real-world projects using React Native and the MERN Stack. I enjoy learning new things and aim to become a full-stack developer who solves real problems with technology.
+        Completed BCA with a 7.44 CGPA, ranking among the top 5% students.
+         Actively participated in hackathons and worked on various software 
+         development and AI-based projects.
         </p>
+
+         <div className="flex flex-col sm:flex-row justify-between gap-6">
+
+          {/* Left Info */}
+          <div className="flex flex-col gap-3">
+            <h1 className="flex items-center gap-3 text-lg md:text-xl dark:text-text-color">
+              Master of Computer Applications (MCA)
+              <span className="bg-green-400 text-white text-xs px-2 py-1 rounded-md flex gap-2 justify-center items-center">Current <MdDone/></span>
+            </h1>
+            <a href="https://rsimamba.com/"  className="text-base flex items-center  md:text-lg font-serif dark:text-text-color">Rajarshi Shahu Institute of Management: Home
+ <BiLinkAlt className="md:size-5 size-2 "/></a>
+          </div>
+
+          {/* Right Info */}
+          <div className="flex flex-col items-start sm:items-end text-sm gap-2">
+            <h3 className="flex items-center gap-2 dark:text-secondary-text-color">
+              <BiCalendar /> 2026
+            </h3>
+            <p className="dark:text-secondary-text-color">First Year </p>
+          </div>
+        </div>
 
         {/* Subjects */}
         <div className="mt-4">
@@ -259,8 +310,10 @@ I use Tailwind for responsive UI, JavaScript for interactivity, and Redux to man
 </Element>
   
 
+  {/* Work experience */}
+
 <Element name="Experience">
-  <div className="w-screen mt-10 flex justify-center items-center px-4 md:px-8 lg:px-20">
+  <div className="w-screen my-12 flex justify-center items-center px-4 md:px-8 lg:px-20">
     <div className="max-w-4xl w-full">
       
       {/* Heading */}
@@ -270,7 +323,7 @@ I use Tailwind for responsive UI, JavaScript for interactivity, and Redux to man
 
       {/* Card Container */}
       <div className="w-full mt-10 flex justify-center items-center">
-        <div className="w-full dark:bg-card-color dark:px-6 dark:py-5 p-4 bg-white rounded-2xl shadow-md hover:scale-105 hover:shadow-2xl transition-all duration-300 flex flex-col gap-6">
+        <div className="w-full dark:bg-card-color dark:px-6 dark:py-5 p-4 bg-white rounded-2xl shadow flex flex-col gap-6">
 
           {/* Header Row */}
           <div className="flex flex-col sm:flex-row justify-between gap-6">
@@ -281,7 +334,7 @@ I use Tailwind for responsive UI, JavaScript for interactivity, and Redux to man
                 Open to Work 
                 <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse ml-2"></span>
               </h1>
-              <p className="text-sm dark:text-text-color">Looking for long time opportunities</p>
+              <p className="text-sm dark:text-text-color">Currently Working as a Freelance Developer</p>
             </div>
 
             {/* Right */}
@@ -297,8 +350,8 @@ I use Tailwind for responsive UI, JavaScript for interactivity, and Redux to man
 
           {/* Description */}
           <p className="text-sm dark:text-secondary-text-color">
-            Actively seeking opportunities as a Full-Stack Developer 
-            to contribute to innovative projects and grow my skills in a collaborative environment.
+         Currently working as a freelance developer, building full-stack web applications and AI-powered solutions for clients. I work with technologies 
+         like React.js, Node.js, Python, FastAPI, LangChain, and LangGraph to develop practical and scalable applications.
           </p>
 
           {/* Skills */}

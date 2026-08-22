@@ -56,7 +56,18 @@ export const Six = () => {
 
         {/* Contact Links */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 w-full">
-          {/* Email */}
+          <div>
+<iframe
+    src="https://www.google.com/maps?q=19.907466,75.3429449&output=embed"
+    className="w-full h-full border-0"
+    loading="lazy"
+    allowFullScreen
+    title="My Location"
+  ></iframe>
+          </div>
+
+          <div className="gap-3">
+ {/* Email */}
           <a
             href="mailto:muzammil844641@gmail.com"
             className="flex px-4 py-4 shadow-sm dark:hover:bg-border-color hover:bg-blue-50 items-center gap-4 dark:text-text-color rounded-lg dark:bg-card-color bg-white w-full"
@@ -99,6 +110,10 @@ export const Six = () => {
               <p>Open to new opportunities and freelance projects</p>
             </div>
           </p>
+          </div>
+         
+        
+          
         </div>
 
         {/* Social Links */}
