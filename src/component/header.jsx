@@ -40,15 +40,14 @@ const Header = () => {
   ];
 
   return (
-    <header className={`w-full fixed top-0 left-0 z-50 ${isScrolled ? "bg-white/70 dark:bg-bg-dark shadow-md" : "bg-white dark:bg-bg-dark"} transition-all duration-300`}>
-      <nav className="max-w-screen-xl mx-auto px-4 py-3 flex items-center justify-between">
+    <header className={`w-full fixed top-0 left-0 z-50 ${isScrolled ? "bg-white/30 backdrop-blur-md dark:bg-bg-dark shadow-md" : "bg-white dark:bg-bg-dark"} transition-all duration-300`}>
+      <nav className="max-w-screen-xl mx-auto px-4 py-3 flex items-center justify-center gap-3">
         {/* Logo */}
-        <h1 className="md:text-xl md:font-bold text-lg dark:text-text-color text-blue-900">Muzammil.Dev</h1>
 
         {/* Desktop Links */}
-        <ul className="hidden md:flex gap-6 text-sm font-bold text-blue-950 dark:text-secondary-text-color">
+        <ul className="hidden md:flex gap-6 text-sm font-bold text-gray-950 dark:text-secondary-text-color">
           {navLinks.map((link) => (
-            <li key={link.to} className="hover:text-blue-800 dark:hover:text-white transition cursor-pointer">
+            <li key={link.to} className="hover:text-gray-500 dark:hover:text-white transition cursor-pointer">
               <Link to={link.to} activeClass={"active-link"} spy={true} smooth={true} duration={700}>
                 {link.label}
               </Link>

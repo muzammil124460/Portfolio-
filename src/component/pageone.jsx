@@ -51,66 +51,59 @@ settheme(data)
 
 {/* Page one  */}
 
-      <div className="  flex items-center w-screen md:h-screen lg:px-40 justify-around  px-10 ">
-        <div className="md:flex fixed hidden md:block   flex-col left-10 top-30 gap-7 items-center ">
-          <a className="text-black dark:text-secondary-text-color hover:scale-115 duration-100 size-5" href="https://www.linkedin.com/in/muzammil1244">      
-            
-                <FaLinkedin  className="text-black hover:scale-105  dark:text-secondary-text-color duration-100 size-5"/>
-</a>
-         <a href="https://x.com/MohammadMu47824"><FaTwitter className="text-black dark:text-secondary-text-color hover:scale-115 duration-100 size-5"/></a> 
-         <a href="https://github.com/muzammil124460"><FaGithub className="text-black dark:text-secondary-text-color hover:scale-115 duration-100 size-5"/></a> 
-         <a href=""><MdEmail className="text-black dark:text-secondary-text-color size-5"/></a>
-          
-         <a href="./public/ats resume 2.pdf"   download="Mohammad_Muzammil_Resume.pdf"
-><BiDownload className="text-black hover:scale-115 dark:text-secondary-text-color duration-100 size-5"/></a> 
-        </div>
+     <div className="flex mb-10 mt-[40%] md:mt-0 md:mb-0 flex-col-reverse md:flex-row items-center w-full md:h-screen lg:px-40 justify-around gap-8 md:gap-0 px-6 md:px-10">
+  <div className="hidden md:flex fixed flex-col left-10 top-30 gap-7 items-center">
+    <a className="text-black dark:text-secondary-text-color hover:scale-115 duration-100 size-5" href="https://www.linkedin.com/in/muzammil1244">
+      <FaLinkedin className="text-black hover:scale-105 dark:text-secondary-text-color duration-100 size-5"/>
+    </a>
+    <a href="https://x.com/MohammadMu47824"><FaTwitter className="text-black dark:text-secondary-text-color hover:scale-115 duration-100 size-5"/></a>
+    <a href="https://github.com/muzammil124460"><FaGithub className="text-black dark:text-secondary-text-color hover:scale-115 duration-100 size-5"/></a>
+    <a href=""><MdEmail className="text-black dark:text-secondary-text-color size-5"/></a>
+    <a href="ats resume 2.pdf"><BiDownload className="text-black hover:scale-115 dark:text-secondary-text-color duration-100 size-5"/></a>
+  </div>
 
-        {/* Left: Texts */}
-        <motion.div
-          className="flex flex-col   justify-center"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h4 
-           className=" texteff text-black text-4xl  dark:text-text-color md:text-3xl mb-2 ">
-            Full Stack Gen AI DeveLoper
-          </h4>
-         
-          <p className=" text-gray-400 text-sm md:text-base leading-relaxed md:max-w-lg">
-Hi, I’m Mohammad Muzammil — I build web, mobile, and AI-powered applications that solve real-world problems. From MERN Stack and React Native to Python, FastAPI, LangChain, and LangGraph, I enjoy turning ideas into useful products while continuously learning and building.
-       </p>
-        <div className="flex items-center mt-4 gap-3">
-            <a
-              href="https://github.com/muzammil124460"
-              download="github"
-              className="flex items-center text dark:text-text-color  size-5 transition text-sm"
-            >
-<FaGithub/>            </a>
-            <a
-              href="https://www.linkedin.com/in/muzammil1244"
-              target="_blank"
-              rel="noopener noreferrer"
-              className=" items-center dark:text-text-color      hover:text-blue-700 transition text-sm"
-            >
-              <FaLinkedin className=" size-5" />
-            </a>
-             <a href="ats resume 2.pdf"   
-><FaRegFileAlt className="text-black hover:scale-115 dark:text-secondary-text-color duration-100 size-4"/></a> 
-          </div>
-        </motion.div>
+  {/* Left: Texts */}
+  <motion.div
+    className="flex flex-col justify-center text-center md:text-left"
+    initial={{ opacity: 0, x: -50 }}
+    animate={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.8 }}
+  >
+    <h4 className="texteff text-black text-3xl  md:mt-1  sm:text-4xl dark:text-text-color md:text-3xl mb-2">
+      Full Stack Gen AI DeveLoper
+    </h4>
 
-        {/* Images  */}
-        
-        <div className=" relative size-100 ">
-<img src={profile} className="" alt="" />
+    <p className="text-gray-400 text-sm md:text-base leading-relaxed md:max-w-lg">
+      Hi, I'm Mohammad Muzammil — I build web, mobile, and AI-powered applications that solve real-world problems. From MERN Stack and React Native to Python, FastAPI, LangChain, and LangGraph, I enjoy turning ideas into useful products while continuously learning and building.
+    </p>
 
+    <div className="flex items-center justify-center md:justify-start mt-4 gap-3">
+      <a
+        href="https://github.com/muzammil124460"
+        download="github"
+        className="flex items-center text dark:text-text-color size-5 transition text-sm"
+      >
+        <FaGithub/>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/muzammil1244"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="items-center dark:text-text-color hover:text-blue-700 transition text-sm"
+      >
+        <FaLinkedin className="size-5" />
+      </a>
+      <a href="ats resume 2.pdf">
+        <FaRegFileAlt className="text-black hover:scale-115 dark:text-secondary-text-color duration-100 size-4"/>
+      </a>
+    </div>
+  </motion.div>
 
-        </div>
-  
-       
-      </div>
-
+  {/* Image */}
+  <div className="relative mt-20 md:mt-0 size-56 sm:size-72 md:size-100">
+    <img src={profile} className="w-full h-full object-contain" alt="" />
+  </div>
+</div>
 
 
       
@@ -120,10 +113,9 @@ Hi, I’m Mohammad Muzammil — I build web, mobile, and AI-powered applications
       <Six/>
       <div className="w-full text-gray-300  flex justify-between md:justify-around text-[10px] md:text-sm items-center  bottom-0 bg-black h-30 px-3 md:px-20"><h1>© Muzammil 2025 — Let’s connact & create something amazing! </h1>
 
-<a   href="/ats resume 2.pdf"
-  download="Mohammad_Muzammil_Resume.pdf"
-
- className=" text-white hover:text-blue-50 cursor-pointer fontbold" >Download resume</a>
+<a   href="/ats resume 2.pdf" className=" text-white hover:text-blue-50 cursor-pointer fontbold" >
+Download resume
+</a>
 </div>      
 
 <div className="fixed bottom-10 right-10 hover:scale-109 hover:bg-blue-50 bg-white shadow-lg 0 w-7 rounded-full flex justify-center items-center  h-7">

@@ -64,16 +64,17 @@ export const TPaeg = () => {
       
       
       <Element name="Skills">
-        <h1 className=" w-full font-bold pt-10 md:text-3xl text-xl  dark:text-text-color text-gray-500   flex  gap-4 "><span className="text-gray-800">Skill</span>  Summary </h1>
+        <h1 className=" w-full px-10 md:px-0 my-10 md:my-0 font-bold pt-10 text-3xl   text-gray-500   flex  gap-4 "><span className="   dark:text-text-color text-gray-800 ">Skill</span>  Summary </h1>
     
 
       
 
       {/* MERN STACK LOGOS */}
-      <div className="w-full md:max-w-4xl mb-10 md:mb-0 mx-auto md:h-screen flex flex-col md:grid md:grid-cols-2 md:items-center md:justify-center py-10 px-4 gap-10">
+      <div className=" max-w-4xl mb-10 md:mb-0  flex  md:flex-row gap-6 flex-col md:justify-around  md:h-screen  items-center  ">
 
   {/* Grid of Letters M E R N */}
-  <div className="grid md:pl-5 lg:pl-0  grid-cols-2 grid-rows-2 w-full md:w-1/2 gap-5 place-items-center md:col-span-1">
+        <div className="grid grid-cols-2 grid-rows-2 md:w-1/4 gap-5 place-items-center md:col-span-1">
+    
     <div className="flex hover:scale-102 duration-200 shadow-green-300  flex-col gap-2 items-center justify-center w-24 h-24 bg-green-50 shadow-2xl">
       <img src={img1} alt="" className="w-8 h-8" />
       <h1>M</h1>
@@ -98,7 +99,7 @@ export const TPaeg = () => {
   {/* Text Section */}
   <div className="md:col-span-1  flex text2r  flex-col justify-center items-center text-center">
     <h1 className="font-extrabold dark:text-text-color text-xl mb-4">MERN Stack</h1>
-    <p className="text-sm  text-black text-secondary-text-color  max-w-md">
+    <p className="text-sm  px-20 md:px-0  text-secondary-text-color  max-w-md">
       <i>I</i> work with MongoDB, Express.js, React.js, and Node.js.<br />
       And yes, I can say that I will be a pro.<br />
       I focus on clean design and strong backend logic.<br />
@@ -112,8 +113,8 @@ export const TPaeg = () => {
 
       <div className=" max-w-4xl mb-10 md:mb-0  flex md:flex-row gap-6 flex-col-reverse md:justify-around  md:h-screen  items-center  ">
  <div className="  md:px-0 px-2 text2  md:w-1/2 col-span-1  ">
- <h1 className="text-center mb-3 dark:text-text-color font-extrabold"> Frontend & UI Skills </h1>
-            <p className="    text-center text-sm dark:text-secondary-text-color text-black ">
+ <h1 className="text-center mb-3 text-xl dark:text-text-color font-extrabold"> Frontend & UI Skills </h1>
+            <p className=" px-10 md:px-0   text-center text-sm text-secondary-text-color  ">
     I have experience with Tailwind CSS, JavaScript, and Redux.
 I use Tailwind for responsive UI, JavaScript for interactivity, and Redux to manage app state smoothly.
 
@@ -121,7 +122,7 @@ I use Tailwind for responsive UI, JavaScript for interactivity, and Redux to man
       </p>
         </div>
         
-        <div className="grid grid-cols-2 grid-rows-2 md:w-1/4 gap-5 place-items-center md:col-span-1">
+        <div className="grid  grid-cols-2 grid-rows-2 md:w-1/4 gap-5 place-items-center md:col-span-1">
     <div className="flex hover:scale-102  duration-200 shadow-orange-300 bg-orange-50 flex-col gap-2 items-center justify-center w-24 h-24 bg-greeb-50 shadow-2xl">
       <img src={img5} alt="" className="w-8 h-8" />
       <h1></h1>
@@ -151,10 +152,11 @@ I use Tailwind for responsive UI, JavaScript for interactivity, and Redux to man
       
       </div>
 
-       <div className="w-full md:max-w-4xl mb-10 md:mb-0 mx-auto md:h-screen flex flex-col md:grid md:grid-cols-2 md:items-center md:justify-center py-10 px-4 gap-10">
+      <div className=" max-w-4xl mb-10 md:mb-0  flex md:flex-row gap-6 flex-col md:justify-around  md:h-screen  items-center  ">
 
   {/* Grid of Letters M E R N */}
-  <div className="grid md:pl-5 lg:pl-0  grid-cols-2 grid-rows-2 w-full md:w-1/2 gap-5 place-items-center md:col-span-1">
+        <div className="grid  grid-cols-2 grid-rows-2 md:w-1/4 gap-5 place-items-center md:col-span-1">
+    
     <div className="flex hover:scale-102 duration-200 shadow-gray-300  flex-col gap-2 items-center justify-center w-24 h-24 bg-gray-200 shadow-2xl">
       <img src={img11} alt="" className="w-8 h-8" />
     </div>
@@ -176,7 +178,7 @@ I use Tailwind for responsive UI, JavaScript for interactivity, and Redux to man
   {/* Text Section */}
   <div className="md:col-span-1  flex text2r  flex-col justify-center items-center text-center">
     <h1 className="font-extrabold dark:text-text-color text-xl mb-4">GEN AI </h1>
-    <p className="text-sm  text-black text-secondary-text-color  max-w-md">
+    <p className="text-sm px-20 md:px-0   text-secondary-text-color  max-w-md">
       I have experience with Python, LangChain, LangGraph, and FastAPI for building AI-powered applications and backend APIs. I use these technologies to develop AI agents, RAG systems, and intelligent workflows.
   </p>
   </div>
@@ -187,35 +189,30 @@ I use Tailwind for responsive UI, JavaScript for interactivity, and Redux to man
 
   
 
-      <h1 className="my-10 text-gray-500 text-3xl font-bold"><span className="text-gray-800">Additional</span> Skill</h1>
+      <h1 className="my-10    text-gray-500  text-3xl px-10 md:px-0 font-bold"><span className=" dark:text-text-color text-gray-800 ">Additional</span> Skill</h1>
 
-      <div className=" grid grid-rows-2 gap-5 justify-center items-center">
+      <div className="w-full grid grid-rows-2 gap-5 justify-center items-center">
 
-<div className=" flex gap-20">
-  <SiTypescript className="size-7 animate-spin hover:text-black text-accent-color"/>
-<SiRedux className="size-7 hover:text-black text-purple-600"/>
-<SiPostman className="size-7 hover:text-black animate-spin text-orange-600"/>
-<SiMysql className="size-10 hover:text-black text-gray-700"/>
-<SiPostgresql className="size-7 hover:text-black  text-gray-800"/>
-<SiSqlalchemy className="size-10 hover:text-black text-black"/>
-<SiHuggingface className="size-7 hover:text-black text-amber-400"/>
+  <div className="flex flex-wrap justify-center gap-6 md:gap-20">
+    <SiTypescript className="size-6 md:size-7 animate-spin hover:text-black text-accent-color"/>
+    <SiRedux className="size-6 md:size-7 hover:text-black text-purple-600"/>
+    <SiPostman className="size-6 md:size-7 hover:text-black animate-spin text-orange-600"/>
+    <SiMysql className="size-8 dark:text-gray-50 md:size-10 hover:text-black text-gray-700"/>
+    <SiPostgresql className="size-6 dark:text-gray-50 md:size-7 hover:text-black text-gray-800"/>
+    <SiSqlalchemy className="size-8 dark:text-gray-50 md:size-10 hover:text-black text-black"/>
+    <SiHuggingface className="size-6 md:size-7 hover:text-black text-amber-400"/>
+  </div>
+
+  <div className="flex flex-wrap justify-center gap-6 md:gap-20">
+    <SiGithub className="size-6 dark:text-gray-50 md:size-7 hover:text-black text-black"/>
+    <SiScikitlearn className="size-8 md:size-10 hover:text-black text-orange-400"/>
+    <SiPandas className="size-6 md:size-7 hover:text-black text-gray-700"/>
+    <SiNumpy className="size-6 md:size-7 hover:text-black text-blue-500"/>
+    <PiMicrosoftExcelLogo className="size-6 md:size-7 hover:text-black text-green-600"/>
+    <PiMicrosoftWordLogo className="size-6 md:size-7 hover:text-black text-blue-600"/>
+    <SiCloudinary className="size-6 md:size-7 hover:text-black text-blue-600"/>
+  </div>
 </div>
-
-<div className=" flex gap-20">
-  <SiGithub className="size-7 hover:text-black text-black"/>
-<SiScikitlearn className="size-10 hover:text-black text-orange-400"/>
-<SiPandas className="size-7 hover:text-black text-gray-700"/>
-<SiNumpy className="size-7 hover:text-black text-blue-500"/>
-<PiMicrosoftExcelLogo className="size-7 hover:text-black text-green-600"/>
-<PiMicrosoftWordLogo className="size-7 hover:text-black text-blue-600"/>
-<SiCloudinary className="size-7 hover:text-black text-blue-600"/>
-</div>
-
-
-
-
-
-      </div>
 
       </Element>
 

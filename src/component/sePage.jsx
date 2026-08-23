@@ -28,9 +28,9 @@ export const SePage = () => {
 
 
   return (
-    <section  className=" flex flex-col  w-screen px-40    dark:text-text-color text-black">
+    <section  className=" flex flex-col  w-screen px-0 md:px-40    dark:text-text-color text-black">
       {/* Summary Section */}
-      <div className="max-w-4xl justify-center items-center md:flex md:flex-row flex-col md:h-screen gap-10 mx-auto  md:mb-10">
+      <div className="max-w-4xl px-15 justify-center items-center md:flex md:flex-row flex-col md:h-screen gap-10 mx-auto  md:mb-10">
         <Element name="About"></Element>
         <img className="w-80  h-60 mb-5 md:mb-0" src={laptopimg} alt="" />
         <div className=" md:w-1/2 texts w-full ">
@@ -43,19 +43,19 @@ export const SePage = () => {
       {/* Projects Section */}
        <Element name="Projects" className="pt-24 scroll-mt-24">
 
-  <h1 className="text-gray-800 text-3xl font-bold dark:text-text-color mb-12 ">
+  <h1 className="text-gray-800 text-3xl px-10 font-bold dark:text-text-color mb-12 ">
           Projects  
         </h1>
-      <div className="w-[100%] flex-col gap-50  flex  items-center">
+      <div className="w-[100%] flex-col gap-50 px-5 flex  items-center">
 
 
 
       
 
         {/* Project 1 */}
-        <div className=" h-80  w-full gap-5 mb-16 md:grid md:grid-cols-5   ">
+        <div className=" md:h-80 h-200 flex flex-col  w-full gap-5 md:mb-16 mb-1 md:grid md:grid-cols-5   ">
 
-          <div className=" relative h-full border-2 rounded-2xl border-gray-50  col-span-3">
+          <div className=" relative  h-full overflow-hidden border-2 rounded-2xl border-gray-50  col-span-3">
 
  <iframe
       src="https://classattend-mac-fm.onrender.com/"
@@ -102,7 +102,7 @@ text-sm leading-6 break-words">A full-stack web application designed to
         {/* Project 2 */}
 
 
-         <div className=" h-80  w-full gap-5 mb-16 md:grid md:grid-cols-5   ">
+         <div className="md:h-80 h-200 flex flex-col-reverse  w-full gap-5 md:mb-16 mb-1 md:grid md:grid-cols-5   ">
  <div className="col-span-2 flex flex-col justify-around">
 <h1 className=" font-bold font-mono text-2xl">Appointly </h1>
 
@@ -120,7 +120,7 @@ text-sm leading-6 break-words">
       integration for managing appointments..</p>
 
           </div>
-          <div className=" relative h-full border-2 rounded-2xl border-gray-50  col-span-3">
+          <div className=" overflow-hidden relative h-full border-2 rounded-2xl border-gray-50  col-span-3">
 
  <iframe
       src="https://appointly-frontend.onrender.com/"
@@ -152,9 +152,9 @@ text-sm leading-6 break-words">
 
         {/* Project 3 */}
         
-         <div className=" h-80  w-full gap-5 mb-16 md:grid md:grid-cols-5   ">
+         <div className="md:h-80 h-200 flex flex-col w-full gap-5 md:mb-16 mb-1 md:grid md:grid-cols-5   ">
 
-          <div className=" overflow relative w-full  h-full border-2 rounded-2xl border-gray-50  col-span-3">
+          <div className="overflow-hidden  relative w-full  h-full border-2 rounded-2xl border-gray-50  col-span-3">
 
  <iframe
       src="https://skillbridge-v0-2-1cwl.onrender.com/"

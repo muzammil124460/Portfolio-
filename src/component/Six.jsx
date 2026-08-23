@@ -120,7 +120,7 @@ export const Six = () => {
         <div className="w-full h-fit mt-10 flex-col flex gap-6">
           <h1 className="text-lg dark:text-secondary-text-color">Follow Me here</h1>
           <div className="flex flex-wrap gap-6">
-            <a href="https://github.com/muzammil1244" className="hover:scale-110 transition-transform duration-150 dark:text-text-color text-xl">
+            <a href="https://github.com/muzammil124460" className="hover:scale-110 transition-transform duration-150 dark:text-text-color text-xl">
               <BsGithub />
             </a>
             <a href="" className="hover:scale-110 transition-transform duration-150 dark:text-text-color text-xl">
