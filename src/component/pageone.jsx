@@ -50,6 +50,7 @@ settheme(data)
       <Header/>
 
 {/* Page one  */}
+<Element  name="Home"></Element>
 
      <div className="flex mb-10 mt-[40%] md:mt-0 md:mb-0 flex-col-reverse md:flex-row items-center w-full md:h-screen lg:px-40 justify-around gap-8 md:gap-0 px-6 md:px-10">
   <div className="  z-2 md:bg-transparent bg-white/10 backdrop-blur-md  rounded-2xl   gap-5 md:px-0 px-10 py-4 md:justify-normal flex sm:w-full md:w-fit fixed md:flex-col md:left-10 md:top-30 md:gap-7 bottom-7  md:items-center">
@@ -71,7 +72,7 @@ settheme(data)
     animate={{ opacity: 1, x: 0 }}
     transition={{ duration: 0.8 }}
   >
-    <h4 className="texteff text-black text-3xl  md:mt-1  sm:text-4xl dark:text-text-color md:text-3xl mb-2">
+    <h4 className=" text-black text-3xl  md:mt-1  sm:text-4xl dark:text-text-color md:text-3xl mb-2">
       FULL STACK GEN AI DEVELOPER
     </h4>
 
@@ -120,11 +121,15 @@ Download resume
 </a>
 </div>      
 
-<div className="fixed bottom-10 right-10 hover:scale-109 hover:bg-blue-50 bg-white shadow-lg 0 w-7 rounded-full flex justify-center items-center  h-7">
+
+
+<div className="fixed md:block hidden bottom-10 right-10 hover:scale-109 hover:bg-blue-50 bg-white shadow-lg 0 w-7 rounded-full md:flex justify-center items-center  h-7">
+
 <Link   smooth={true}
     duration={700} to="Home"   >
  <BiArrowToTop/>
 </Link>
+
 </div>
 
 
