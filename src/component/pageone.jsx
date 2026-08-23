@@ -62,7 +62,7 @@ settheme(data)
     <a href="https://x.com/MohammadMu47824"><FaTwitter className="text-black dark:text-secondary-text-color hover:scale-115 duration-100 size-5"/></a>
     <a href="https://github.com/muzammil124460"><FaGithub className="text-black dark:text-secondary-text-color hover:scale-115 duration-100 size-5"/></a>
     <a href=""><MdEmail className="text-black dark:text-secondary-text-color size-5"/></a>
-    <a href="ats resume 2.pdf"><BiDownload className="text-black hover:scale-115 dark:text-secondary-text-color duration-100 size-5"/></a>
+    <a href="/full stack 0.5.pdf"><BiDownload className="text-black hover:scale-115 dark:text-secondary-text-color duration-100 size-5"/></a>
   </div>
 
   {/* Left: Texts */}
@@ -96,7 +96,7 @@ settheme(data)
       >
         <FaLinkedin className="size-5" />
       </a>
-      <a href="ats resume 2.pdf">
+      <a href="/full stack 0.5.pdf">
         <FaRegFileAlt className="text-black hover:scale-115 dark:text-secondary-text-color duration-100 size-4"/>
       </a>
     </div>
@@ -116,7 +116,7 @@ settheme(data)
       <Six/>
       <div className="w-full text-gray-300  flex justify-between md:justify-around text-[10px] md:text-sm items-center  bottom-0 bg-black h-30 px-3 md:px-20"><h1>© Muzammil 2025 — Let’s connact & create something amazing! </h1>
 
-<a   href="/ats resume 2.pdf" className=" text-white hover:text-blue-50 cursor-pointer fontbold" >
+<a   href="/full stack 0.5.pdf" className=" text-white hover:text-blue-50 cursor-pointer fontbold" >
 Download resume
 </a>
 </div>      
