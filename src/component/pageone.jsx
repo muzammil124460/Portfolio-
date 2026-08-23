@@ -46,16 +46,18 @@ settheme(data)
 
   return (
 
-    <section data-theme={gettheme === "dark"?"dark":""} className="w-full h-full   dark:bg-bg-dark  bg-white dark:bg-gray-95 overflow-x-hidden ">
+    <section data-theme={gettheme === "dark"?"dark":""} className="w-full h-full    dark:bg-bg-dark  bg-white dark:bg-gray-95 overflow-x-hidden ">
       <Header/>
 
 {/* Page one  */}
 
      <div className="flex mb-10 mt-[40%] md:mt-0 md:mb-0 flex-col-reverse md:flex-row items-center w-full md:h-screen lg:px-40 justify-around gap-8 md:gap-0 px-6 md:px-10">
-  <div className="hidden md:flex fixed flex-col left-10 top-30 gap-7 items-center">
+  <div className="  z-2 md:bg-transparent bg-white/10 backdrop-blur-md  rounded-2xl   gap-5 md:px-0 px-10 py-4 md:justify-normal flex sm:w-full md:w-fit fixed md:flex-col md:left-10 md:top-30 md:gap-7 bottom-7  md:items-center">
+    
     <a className="text-black dark:text-secondary-text-color hover:scale-115 duration-100 size-5" href="https://www.linkedin.com/in/muzammil1244">
       <FaLinkedin className="text-black hover:scale-105 dark:text-secondary-text-color duration-100 size-5"/>
     </a>
+
     <a href="https://x.com/MohammadMu47824"><FaTwitter className="text-black dark:text-secondary-text-color hover:scale-115 duration-100 size-5"/></a>
     <a href="https://github.com/muzammil124460"><FaGithub className="text-black dark:text-secondary-text-color hover:scale-115 duration-100 size-5"/></a>
     <a href=""><MdEmail className="text-black dark:text-secondary-text-color size-5"/></a>
@@ -69,7 +71,7 @@ settheme(data)
     animate={{ opacity: 1, x: 0 }}
     transition={{ duration: 0.8 }}
   >
-    <h4 className="md:texteff text-black text-3xl  md:mt-1  sm:text-4xl dark:text-text-color md:text-3xl mb-2">
+    <h4 className="texteff text-black text-3xl  md:mt-1  sm:text-4xl dark:text-text-color md:text-3xl mb-2">
       FULL STACK GEN AI DEVELOPER
     </h4>
 
