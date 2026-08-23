@@ -1,4 +1,4 @@
-# 🌟 Personal Portfolio - MERN Stack Project
+# 🌟 Personal Portfolio - Full Stack Gen Ai Project
 
 This is my personal portfolio website built using the **Full stack** to showcase my skills, projects, and contact information in a professional and visually appealing manner.
 
