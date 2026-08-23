@@ -69,8 +69,8 @@ settheme(data)
     animate={{ opacity: 1, x: 0 }}
     transition={{ duration: 0.8 }}
   >
-    <h4 className="texteff text-black text-3xl  md:mt-1  sm:text-4xl dark:text-text-color md:text-3xl mb-2">
-      Full Stack Gen AI DeveLoper
+    <h4 className="md:texteff text-black text-3xl  md:mt-1  sm:text-4xl dark:text-text-color md:text-3xl mb-2">
+      FULL STACK GEN AI DEVELOPER
     </h4>
 
     <p className="text-gray-400 text-sm md:text-base leading-relaxed md:max-w-lg">
